@@ -20,8 +20,8 @@ int search(int arr[], int n, int value){
     return -1;
 }
 bool add_at_index(int arr[], int& n, int value, int index){
-    for (int i =index;i<n;i++){
-        arr[i+1] = arr[i];
+    for (int i =n+1;i>index;i--){
+        arr[i]=arr[i-1];
     }
     arr[index] = value;
     n++;
