@@ -5,10 +5,14 @@
 
 using namespace std;
 
+int a[10000];
+int n=20;
 
 int main(){
     // TODO
-    cout << "Hello Worldaddd" << endl;
+    input_array(a,n);
+    print_array(a,n);
+
     // END TODO
     return 0;
 }
