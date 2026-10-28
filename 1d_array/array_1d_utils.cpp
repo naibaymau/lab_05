@@ -20,11 +20,17 @@ int search(int arr[], int n, int value){
     return -1;
 }
 bool add_at_index(int arr[], int& n, int value, int index){
+    if (sizeof(arr)/sizeof(arr[0]) < n+1) return 0;
     for (int i =index;i<n;i++){
-
+        arr[i+1] = arr[i];
     }
+    arr[index] = value;
     return 1;
 }
 bool remove_at_index(int arr[], int& n, int index){
+    if (n-1 < 0) return 0;
+    for (int i =index;i<n-1;i++){
+        arr[i] = arr[i+1];
+    }
     return 1;
 }
