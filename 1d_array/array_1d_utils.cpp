@@ -25,6 +25,7 @@ bool add_at_index(int arr[], int& n, int value, int index){
         arr[i+1] = arr[i];
     }
     arr[index] = value;
+    n++;
     return 1;
 }
 bool remove_at_index(int arr[], int& n, int index){
@@ -32,5 +33,6 @@ bool remove_at_index(int arr[], int& n, int index){
     for (int i =index;i<n-1;i++){
         arr[i] = arr[i+1];
     }
+    n--;
     return 1;
 }
