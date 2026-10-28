@@ -11,8 +11,9 @@ int n=5;
 int main(){
     // TODO
     input_array(a,n);
-    print_array(a,n);
+    print_array(a,n); cout << endl;
 
+    cout << endl;
     // END TODO
     return 0;
 }
