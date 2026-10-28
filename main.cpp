@@ -22,12 +22,12 @@ int main(){
 
     int c[100] = {23 ,10, 30, 0 ,10, 0};
     int nC = 6;
-    cout << (add_at_index(c,nC,5,0)==1) ? "True" : "False" ;cout << "" << nC << " ";
+    cout << (add_at_index(c,nC,5,0)==1) ;cout << "" << nC << " ";
     print_array(c,nC); cout << endl;
 
     int d[100] = {23,10,30,0,10,0};
     int nD = 6; 
-    cout << (remove_at_index(d,nD,0)==1)? "True" : "False" ;cout << " " << nD << " ";
+    cout << (remove_at_index(d,nD,0)==1);cout << " " << nD << " ";
     print_array(d,nD); cout << endl;
 
     cout << endl;
