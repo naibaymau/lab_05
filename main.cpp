@@ -8,6 +8,9 @@ using namespace std;
 int a[10000];
 int n=5;
 
+// 5
+// 1 3 5 7 9
+
 int main(){
     // TODO
     input_array(a,n);
