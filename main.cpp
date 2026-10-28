@@ -6,7 +6,7 @@
 using namespace std;
 
 int a[10000];
-int n=20;
+int n=5;
 
 int main(){
     // TODO
