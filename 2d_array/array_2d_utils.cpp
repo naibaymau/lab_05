@@ -184,6 +184,7 @@ void transpose_2d(int arr[][MAX_COLS], int rows, int cols){
                 int temp = arr[i][j];
                 arr[i][j] = arr[j][i];
                 arr[j][i] = temp;
+                cout << 2;
             }
     return;
 }
