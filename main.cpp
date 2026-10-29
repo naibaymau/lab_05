@@ -49,11 +49,21 @@ int main(){
     int b[MAX_ROWS][MAX_COLS];
     int rB = 2; int cB = 3; 
     input_2d(b, rB, cB);
-    print_2d(b, rB, cB);
-    cout << check_exist(b, rB, cB, 3) << endl;
-    cout <<  compute_2d(b, rB, cB, '+') << endl;
-    cout <<  compute_mean_2d(b, rB,cB) << endl;
-    cout << get_max_min_2d(b, rB, cB, true) << endl;
+    print_2d(b, rB, cB); cout << endl;
+    int c[MAX_ROWS][MAX_COLS]={
+        {1,2},
+        {3,4}
+    };
+    rB = 2; cB = 2; 
+    cout << check_exist(c, rB, cB, 3) << endl;
+    cout <<  compute_2d(c, rB, cB, '+') << endl;
+    cout <<  compute_mean_2d(c, rB,cB) << endl;
+    int d[MAX_ROWS][MAX_COLS]={
+        {1,8},
+        {-2,4}
+    };
+     rB = 2;  cB = 2; 
+    cout << get_max_min_2d(d, rB, cB, true) << endl;
 
     
     cout << endl;
