@@ -142,6 +142,21 @@ void sort_ascending_2d(int arr[][MAX_COLS], int rows, int cols, bool row_based )
         }
 }
 void sort_descending_2d(int arr[][MAX_COLS], int rows, int cols, bool row_based ){
+    if (row_based)
+        for (int i =0 ;i <rows;i++)
+            sort_descending(arr[i],cols);
+    else 
+        for (int i=0;i<cols;i++){
+            for (int m = 0; m<rows-1;m++){
+                for (int n = m+1;n<rows;n++){
+                    if (arr[n][i] > arr[m][i]){
+                        int temp = arr[n][i];
+                        arr[n][i] = arr[m][i];
+                        arr[m][i] = temp;
+                    }
+                }
+            }
+        }
     return;
 }
 void swap_2d(int arr[][MAX_COLS], int rows, int cols,
