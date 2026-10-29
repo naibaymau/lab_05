@@ -105,3 +105,6 @@ int get_max_min(int arr[], int n, bool max){
     }
     return res;
 }
+
+
+

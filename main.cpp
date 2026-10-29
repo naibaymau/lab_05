@@ -34,16 +34,30 @@ int main(){
 
     // cout << endl;
 
-    int e[100] = {23,10,30,0,15,0};
-    int nE = 6;
-    cout << compute_array(e, nE, '*') << endl;
-    cout << compute_mean(e, nE) << endl;
-    cout << compute_median(e, nE) << endl;
-    cout << get_max_min(e, nE, false) << endl;
-    sort_ascending(e, nE);print_array(e,nE); cout << endl;
-    sort_descending(e,nE);print_array(e,nE); cout << endl;
+    // int e[100] = {23,10,30,0,15,0};
+    // int nE = 6;
+    // cout << compute_array(e, nE, '*') << endl;
+    // cout << compute_mean(e, nE) << endl;
+    // cout << compute_median(e, nE) << endl;
+    // cout << get_max_min(e, nE, false) << endl;
+    // sort_ascending(e, nE);print_array(e,nE); cout << endl;
+    // sort_descending(e,nE);print_array(e,nE); cout << endl;
 
+    // cout << endl;
+
+    
+    int b[MAX_ROWS][MAX_COLS];
+    int rB = 2; int cB = 3; 
+    input_2d(b, rB, cB);
+    print_2d(b, rB, cB);
+    cout << check_exist(b, rB, cB, 3) << endl;
+    cout <<  compute_2d(b, rB, cB, '+') << endl;
+    cout <<  compute_mean_2d(b, rB,cB) << endl;
+    cout << get_max_min_2d(b, rB, cB, true) << endl;
+
+    
     cout << endl;
+
     // END TODO
     return 0;
 }
