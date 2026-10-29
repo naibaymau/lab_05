@@ -86,9 +86,9 @@ float compute_median(int arr[], int n){
     sort_ascending(arr,n);
     float res =0.0;
     if (n%2==0){
-        res += (float)(arr[n/2]+arr[n/2-1])/2.0f;
+        res =(arr[n/2]+arr[n/2-1])/2.0f;
     } else {
-        res = (float)arr[n/2];
+        res = arr[n/2];
     }
     return round_to_decimal(res,2);
 }
