@@ -94,11 +94,12 @@ int main(){
                 0, 1, true);
     print_2d(d,rB,cB); cout << endl;
     int e[MAX_ROWS][MAX_COLS]={
-        {1,2,3}, //1 4 7 
-        {4,5,6}, //2 5 8
-        {7,8,9}  //3 6 9
+        {1,2,3,4}, //       1 5 9 13
+        {5,6,7,8}, //       2 6 10 14
+        {9,10,11,12},//     3 7 11 15
+        {13,14,15,16}  //   4 8 12 16
     };
-    rB = 3; cB = 3; 
+    rB = 4; cB = 4; 
     transpose_2d(e, rB, cB);
     print_2d(e,rB,cB); cout << endl;
     int f[MAX_ROWS][MAX_COLS]={
