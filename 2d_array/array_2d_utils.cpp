@@ -27,13 +27,14 @@ long long compute_2d(int arr[][MAX_COLS], int rows, int cols, char op){
         for (int i = 0 ; i < rows;i++)
             for (int j= 0 ;j< cols;j++)
                 res *= arr[i][j] ;
+        return res;
     } else {
         long long res =0;
         for (int i = 0 ; i < rows;i++)
             for (int j= 0 ;j< cols;j++)
                 res += arr[i][j] ;
+        return res;
     }
-    return res;
 }
 float compute_mean_2d(int arr[][MAX_COLS], int rows, int cols){
     float res =0;
