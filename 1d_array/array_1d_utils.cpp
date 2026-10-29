@@ -75,7 +75,7 @@ int get_max_min(int arr[], int n, bool max = true){
         }
     } else {
         for (int i =1;i<n;i++){
-            if (arr[i]>res) res = arr[i]; 
+            if (arr[i]<es) res = arr[i]; 
         }
     }
     return res;
