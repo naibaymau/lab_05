@@ -13,9 +13,9 @@ int n=5;
 
 int main(){
     // TODO
-    input_array(a,n);
+    // input_array(a,n);
 
-    print_array(a,n); cout << endl;
+    // print_array(a,n); cout << endl;
 
     int b[100] = {1,31,20,1,10,20,35,20};
     cout << search (b,8,20) << endl;
@@ -29,6 +29,15 @@ int main(){
     int nD = 6; 
     cout << (remove_at_index(d,nD,0)==1);cout << " " << nD << " ";
     print_array(d,nD); cout << endl;
+
+    int e[100] = {23,10,30,0,10,0};
+    int nE = 6;
+    cout << compute_array(e, nE, '+') << endl;
+    cout << compute_mean(e, nE) << endl;
+    cout << compute_median(e, nE) << endl;
+    cout << get_max_min(e, nE, false) << endl;
+    sort_ascending(e, nE);print_array(e,nE); cout << endl;
+    sort_descending(e,nE);print_array(e,nE); cout << endl;
 
     cout << endl;
     // END TODO
