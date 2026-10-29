@@ -82,7 +82,7 @@ int main(){
         {1,3,2},
         {4,6,5}
     };
-    rB = 2; cB = 2; 
+    rB = 2; cB = 3; 
     sort_descending_2d(c, rB, cB, true);
     print_2d(c,rB,cB); cout << endl;
     int d[MAX_ROWS][MAX_COLS]={
