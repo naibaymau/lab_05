@@ -94,10 +94,11 @@ int main(){
                 0, 1, true);
     print_2d(d,rB,cB); cout << endl;
     int e[MAX_ROWS][MAX_COLS]={
-        {1,2},
-        {3,4}
+        {1,2,3},
+        {4,5,6},
+        {7,8,9}
     };
-    rB = 2; cB = 2; 
+    rB = 3; cB = 3; 
     transpose_2d(e, rB, cB);
     print_2d(e,rB,cB); cout << endl;
     int f[MAX_ROWS][MAX_COLS]={
