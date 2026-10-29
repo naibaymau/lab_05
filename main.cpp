@@ -11,22 +11,28 @@ int n=5;
 // // 5
 // 1 3 5 7 9
 
+void print_array(int arr[], int n){
+    for (int i=0;i<n;i++){
+        cout << arr[i];
+        if (i < n-1) cout << " ";
+    }
+}
 int main(){
     // TODO
     // input_array(a,n);
     // print_array(a,n); cout << endl;
-    int b[100] = {1,31,20,1,10,20,35,20};
-    cout << search (b,8,20) << endl;
-    int c[100] = {23 ,10, 30, 0 ,10, 0};
-    int nC = 6;
-    cout << (add_at_index(c,nC,5,0)==1) ;cout << " " << nC << " ";
-    print_array(c,nC); cout << endl;
-    int d[100] = {23,10,30,0,10,0};
-    int nD = 6; 
-    cout << (remove_at_index(d,nD,0)==1);cout << " " << nD << " ";
-    print_array(d,nD); cout << endl;
+    // int b[100] = {1,31,20,1,10,20,35,20};
+    // cout << search (b,8,20) << endl;
+    // int c[100] = {23 ,10, 30, 0 ,10, 0};
+    // int nC = 6;
+    // cout << (add_at_index(c,nC,5,0)==1) ;cout << " " << nC << " ";
+    // print_array(c,nC); cout << endl;
+    // int d[100] = {23,10,30,0,10,0};
+    // int nD = 6; 
+    // cout << (remove_at_index(d,nD,0)==1);cout << " " << nD << " ";
+    // print_array(d,nD); cout << endl;
 
-    cout << endl;
+    // cout << endl;
 
     int e[100] = {23,10,30,0,15,0};
     int nE = 6;
