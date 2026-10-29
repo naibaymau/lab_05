@@ -161,6 +161,20 @@ void sort_descending_2d(int arr[][MAX_COLS], int rows, int cols, bool row_based 
 }
 void swap_2d(int arr[][MAX_COLS], int rows, int cols,
              int first_index, int second_index, bool row_based ){
+    if (row_based){
+        for (int i = 0;i<cols;i++){
+            int temp = arr[first_index][i];
+            arr[first_index][i] = arr[second_index][i];
+            arr[second_index][i] = temp;
+        }
+    }
+    else{
+        for (int i = 0;i<rows;i++){
+            int temp = arr[i][first_index];
+            arr[i][first_index]= arr[i][second_index];
+            arr[i][second_index] = temp;
+        }
+    } 
     return;
 }
 void transpose_2d(int arr[][MAX_COLS], int rows, int cols){

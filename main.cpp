@@ -76,14 +76,14 @@ int main(){
         {6,4,5}
     };
     int rB = 2; int cB = 3; 
-    sort_ascending_2d(b, rB, cB, false);
+    sort_ascending_2d(b, rB, cB, true);
     print_2d(b,rB,cB); cout << endl;
     int c[MAX_ROWS][MAX_COLS]={
         {1,3,2},
         {4,6,5}
     };
     rB = 2; cB = 3; 
-    sort_descending_2d(c, rB, cB, false);
+    sort_descending_2d(c, rB, cB, true);
     print_2d(c,rB,cB); cout << endl;
     int d[MAX_ROWS][MAX_COLS]={
         {1,2},
