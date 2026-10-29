@@ -85,7 +85,7 @@ float compute_mean(int arr[], int n){
 float compute_median(int arr[], int n){
     sort_ascending(arr,n);
     if (n%2==0){
-        return round_to_decimal(((float)arr[n/2]+(float)arr[n/2-1])/2,2);        
+        return round_to_decimal(((float)arr[n/2]+(float)arr[n/2-1])/2.0,2);        
     } else {
         return round_to_decimal(1.0*arr[n/2],2);
     }
