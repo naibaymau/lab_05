@@ -187,9 +187,31 @@ void transpose_2d(int arr[][MAX_COLS], int rows, int cols){
             }
     return;
 }
-void rotate_2d(int arr[][MAX_COLS], int rows, int cols, int n){
+void reverse_2d(int arr[][MAX_COLS], int rows, int cols, bool row_based ){
+    if (row_based){
+        for (int i = 0; i < rows / 2; i++){
+            for (int j = 0; j < cols; j++){
+                int temp = arr[i][j];
+                arr[i][j] = arr[rows - 1 - i][j];
+                arr[rows - 1 - i][j] = temp;
+            }
+        }
+    }
+    else{
+        for (int i = 0; i < rows; i++){
+            for (int j = 0; j < cols / 2; j++){
+                int temp = arr[i][j];
+                arr[i][j] = arr[i][cols - 1 - j];
+                arr[i][cols - 1 - j] = temp;
+            }
+        }
+    }
     return;
 }
-void reverse_2d(int arr[][MAX_COLS], int rows, int cols, bool row_based ){
+void rotate_2d(int arr[][MAX_COLS], int rows, int cols, int n){ n = n % 4;                        // xoay 4 lần = về nguyên trạng
+    for (int k = 0; k < n; k++){
+        transpose_2d(arr,rows,cols);
+        reverse_2d(arr,rows,cols,true);
+    }
     return;
 }
