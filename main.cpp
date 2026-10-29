@@ -91,14 +91,29 @@ int main(){
     };
     rB = 2; cB = 2; 
     swap_2d(d, rB, cB,
-                0, 1, false);
+                0, 1, true);
     print_2d(d,rB,cB); cout << endl;
-    transpose_2d(b, rB, cB);
-    print_2d(d,rB,cB); cout << endl;
-    rotate_2d(b, rB, cB, 1);
-    print_2d(d,rB,cB); cout << endl;
-    reverse_2d(b, rB, cB, true);
-    print_2d(d,rB,cB); cout << endl;
+    int e[MAX_ROWS][MAX_COLS]={
+        {1,2},
+        {3,4}
+    };
+    rB = 2; cB = 2; 
+    transpose_2d(e, rB, cB);
+    print_2d(e,rB,cB); cout << endl;
+    int f[MAX_ROWS][MAX_COLS]={
+        {1,2},
+        {3,4}
+    };
+    rB = 2; cB = 2; 
+    rotate_2d(f, rB, cB, 1);
+    print_2d(f,rB,cB); cout << endl;
+    int g[MAX_ROWS][MAX_COLS]={
+        {1,2},
+        {3,4}
+    };
+    rB = 2; cB = 2; 
+    reverse_2d(g, rB, cB, true);
+    print_2d(g,rB,cB); cout << endl;
 
     
     cout << endl;
