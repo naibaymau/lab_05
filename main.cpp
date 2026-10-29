@@ -94,9 +94,9 @@ int main(){
                 0, 1, true);
     print_2d(d,rB,cB); cout << endl;
     int e[MAX_ROWS][MAX_COLS]={
-        {1,2,3},
-        {4,5,6},
-        {7,8,9}
+        {1,2,3}, 1 4 7 
+        {4,5,6}, 2 5 8
+        {7,8,9}  3 6 9
     };
     rB = 3; cB = 3; 
     transpose_2d(e, rB, cB);
