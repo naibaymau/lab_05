@@ -141,9 +141,19 @@ void sort_ascending_2d(int arr[][MAX_COLS], int rows, int cols, bool row_based )
             }
         }
 }
-void sort_descending_2d(int arr[][MAX_COLS], int rows, int cols, bool row_based );
+void sort_descending_2d(int arr[][MAX_COLS], int rows, int cols, bool row_based ){
+    return;
+}
 void swap_2d(int arr[][MAX_COLS], int rows, int cols,
-             int first_index, int second_index, bool row_based );
-void transpose_2d(int arr[][MAX_COLS], int rows, int cols);
-void rotate_2d(int arr[][MAX_COLS], int rows, int cols, int n);
-void reverse_2d(int arr[][MAX_COLS], int rows, int cols, bool row_based );
+             int first_index, int second_index, bool row_based ){
+    return;
+}
+void transpose_2d(int arr[][MAX_COLS], int rows, int cols){
+    return;
+}
+void rotate_2d(int arr[][MAX_COLS], int rows, int cols, int n){
+    return;
+}
+void reverse_2d(int arr[][MAX_COLS], int rows, int cols, bool row_based ){
+    return;
+}
