@@ -85,13 +85,12 @@ float compute_mean(int arr[], int n){
 float compute_median(int arr[], int n){
     sort_ascending(arr,n);
     float res =0.0;
-    float x = 2.0f;
     if (n%2==0){
-        res =((float)arr[n/2]+(float)arr[n/2-1])/x;
+        res =(arr[n/2]+arr[n/2-1])/2.0f;
     } else {
         res = arr[n/2];
     }
-    return round_to_decimal((res*100.0f)/(100.0f),2);
+    return round_to_decimal(res,2);
 }
 int get_max_min(int arr[], int n, bool max = true){
     int res = arr[0];
