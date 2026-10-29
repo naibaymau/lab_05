@@ -22,7 +22,7 @@ bool check_exist(int arr[][MAX_COLS], int rows, int cols, int value){
     return false;
 }
 long long compute_2d(int arr[][MAX_COLS], int rows, int cols, char op){
-    if (op = '*'){
+    if (op == '*'){
         long long res =1;
         for (int i = 0 ; i < rows;i++)
             for (int j= 0 ;j< cols;j++)
@@ -33,6 +33,7 @@ long long compute_2d(int arr[][MAX_COLS], int rows, int cols, char op){
             for (int j= 0 ;j< cols;j++)
                 res += arr[i][j] ;
     }
+    return res;
 }
 float compute_mean_2d(int arr[][MAX_COLS], int rows, int cols){
     float res =0;
