@@ -16,12 +16,12 @@ void print_2d(int arr[][MAX_COLS], int rows, int cols){
         for (int j= 0 ;j< cols;j++)
             cout << arr[i][j] << " ";
 }
-void print_array(int arr[], int n){
-    for (int i=0;i<n;i++){
-        cout << arr[i];
-        if (i < n-1) cout << " ";
-    }
-}
+// void print_array(int arr[], int n){
+//     for (int i=0;i<n;i++){
+//         cout << arr[i];
+//         if (i < n-1) cout << " ";
+//     }
+// }
 int main(){
     // TODO
     // input_array(a,n);
