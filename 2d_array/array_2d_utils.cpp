@@ -178,8 +178,8 @@ void swap_2d(int arr[][MAX_COLS], int rows, int cols,
     return;
 }
 void transpose_2d(int arr[][MAX_COLS], int rows, int cols){
-    for (int i =1;i<rows;i++)
-        for (int j =0;j<cols/2;j++)
+    for (int i =0;i<rows;i++)
+        for (int j =i+1;j<cols;j++)
             {
                 int temp = arr[i][j];
                 arr[i][j] = arr[j][i];
