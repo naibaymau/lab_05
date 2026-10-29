@@ -63,7 +63,7 @@ void sort_descending(int arr[], int n){
             }
         }
 }
-long long compute_array(int arr[], int n, char op = '+'){
+long long compute_array(int arr[], int n, char op){
     if (op == '*') {
         long long res =1;
         for (int i =0;i<n;i++) res*=arr[i];
@@ -92,7 +92,7 @@ float compute_median(int arr[], int n){
     }
     return round_to_decimal(res,2);
 }
-int get_max_min(int arr[], int n, bool max = true){
+int get_max_min(int arr[], int n, bool max){
     int res = arr[0];
     if (max==true){
         for (int i =1;i<n;i++){
