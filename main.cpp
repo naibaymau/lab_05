@@ -11,6 +11,11 @@ int n=5;
 // // 5
 // 1 3 5 7 9
 
+void print_2d(int arr[][MAX_COLS], int rows, int cols){
+    for (int i = 0 ; i < rows;i++)
+        for (int j= 0 ;j< cols;j++)
+            cout << arr[i][j] << " ";
+}
 void print_array(int arr[], int n){
     for (int i=0;i<n;i++){
         cout << arr[i];
@@ -46,24 +51,54 @@ int main(){
     // cout << endl;
 
     
-    int b[MAX_ROWS][MAX_COLS];
+    // int b[MAX_ROWS][MAX_COLS];
+    // int rB = 2; int cB = 3; 
+    // input_2d(b, rB, cB);
+    // print_2d(b, rB, cB); cout << endl;
+    // int c[MAX_ROWS][MAX_COLS]={
+    //     {1,2},
+    //     {3,4}
+    // };
+    // rB = 2; cB = 2; 
+    // cout << check_exist(c, rB, cB, 3) << endl;
+    // cout <<  compute_2d(c, rB, cB, '+') << endl;
+    // cout <<  compute_mean_2d(c, rB,cB) << endl;
+    // int d[MAX_ROWS][MAX_COLS]={
+    //     {1,8},
+    //     {-2,4}
+    // };
+    //  rB = 2;  cB = 2; 
+    // cout << get_max_min_2d(d, rB, cB, true) << endl;
+
+    
+    int b[MAX_ROWS][MAX_COLS]={
+        {3,1,2},
+        {6,4,5}
+    };
     int rB = 2; int cB = 3; 
-    input_2d(b, rB, cB);
-    print_2d(b, rB, cB); cout << endl;
+    sort_ascending_2d(b, rB, cB, true);
+    print_2d(b,rB,cB); cout << endl;
     int c[MAX_ROWS][MAX_COLS]={
+        {1,3,2},
+        {4,6,5}
+    };
+    rB = 2; cB = 2; 
+    sort_descending_2d(c, rB, cB, true);
+    print_2d(c,rB,cB); cout << endl;
+    int d[MAX_ROWS][MAX_COLS]={
         {1,2},
         {3,4}
     };
     rB = 2; cB = 2; 
-    cout << check_exist(c, rB, cB, 3) << endl;
-    cout <<  compute_2d(c, rB, cB, '+') << endl;
-    cout <<  compute_mean_2d(c, rB,cB) << endl;
-    int d[MAX_ROWS][MAX_COLS]={
-        {1,8},
-        {-2,4}
-    };
-     rB = 2;  cB = 2; 
-    cout << get_max_min_2d(d, rB, cB, true) << endl;
+    swap_2d(b, rB, cB,
+                0, 1, true);
+    print_2d(d,rB,cB); cout << endl;
+    transpose_2d(b, rB, cB);
+    print_2d(d,rB,cB); cout << endl;
+    rotate_2d(b, rB, cB, 1);
+    print_2d(d,rB,cB); cout << endl;
+    reverse_2d(b, rB, cB, true);
+    print_2d(d,rB,cB); cout << endl;
 
     
     cout << endl;
