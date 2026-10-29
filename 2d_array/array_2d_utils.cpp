@@ -208,10 +208,11 @@ void reverse_2d(int arr[][MAX_COLS], int rows, int cols, bool row_based ){
     }
     return;
 }
-void rotate_2d(int arr[][MAX_COLS], int rows, int cols, int n){ n = n % 4;                        // xoay 4 lần = về nguyên trạng
+void rotate_2d(int arr[][MAX_COLS], int rows, int cols, int n){ 
+    n = n % 4;                       
     for (int k = 0; k < n; k++){
         transpose_2d(arr,rows,cols);
-        reverse_2d(arr,rows,cols,true);
+        reverse_2d(arr,rows,cols,false);
     }
     return;
 }
