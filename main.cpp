@@ -103,17 +103,21 @@ int main(){
     transpose_2d(e, rB, cB);
     print_2d(e,rB,cB); cout << endl;
     int f[MAX_ROWS][MAX_COLS]={
-        {1,2},
-        {3,4}
+        {1,2,3,4}, //       13 9 5  1
+        {5,6,7,8}, //       14 10 6 2
+        {9,10,11,12},//     15 11 7 3
+        {13,14,15,16}  //   16 12 8  4
     };
-    rB = 2; cB = 2; 
+    rB = 4; cB = 4; 
     rotate_2d(f, rB, cB, 1);
     print_2d(f,rB,cB); cout << endl;
     int g[MAX_ROWS][MAX_COLS]={
-        {1,2},
-        {3,4}
+        {1,2,3,4}, //       4 3 2 1 
+        {5,6,7,8}, //       8 7 6 5
+        {9,10,11,12},//     12 11 10 9
+        {13,14,15,16}  //   16 15 14 13
     };
-    rB = 2; cB = 2; 
+    rB = 4; cB = 4; 
     reverse_2d(g, rB, cB, true);
     print_2d(g,rB,cB); cout << endl;
 
