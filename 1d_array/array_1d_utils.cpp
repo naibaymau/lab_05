@@ -91,7 +91,7 @@ float compute_median(int arr[], int n){
     } else {
         res = arr[n/2];
     }
-    return round_to_decimal(res,2);
+    return round_to_decimal((res*100.0f)/(100.0f),2);
 }
 int get_max_min(int arr[], int n, bool max = true){
     int res = arr[0];
