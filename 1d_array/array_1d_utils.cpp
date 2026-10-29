@@ -91,6 +91,7 @@ float compute_median(int arr[], int n){
     } else {
         res = arr[n/2];
     }
+    cout << type_info(res);
     return round_to_decimal(res,2);
 }
 int get_max_min(int arr[], int n, bool max = true){
