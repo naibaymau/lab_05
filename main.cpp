@@ -90,7 +90,7 @@ int main(){
         {3,4}
     };
     rB = 2; cB = 2; 
-    swap_2d(b, rB, cB,
+    swap_2d(d, rB, cB,
                 0, 1, true);
     print_2d(d,rB,cB); cout << endl;
     transpose_2d(b, rB, cB);
