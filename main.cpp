@@ -11,12 +11,12 @@ int n=5;
 // // 5
 // 1 3 5 7 9
 
-// void print_array(int arr[], int n){
-//     for (int i=0;i<n;i++){
-//         cout << arr[i];
-//         if (i < n-1) cout << " ";
-//     }
-// }
+void print_array(int arr[], int n){
+    for (int i=0;i<n;i++){
+        cout << arr[i];
+        if (i < n-1) cout << " ";
+    }
+}
 int main(){
     // TODO
     // input_array(a,n);

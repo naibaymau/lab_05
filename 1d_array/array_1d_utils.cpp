@@ -8,12 +8,12 @@ using namespace std;
 //         cin >> arr[i];
 //     }
 // }
-void print_array(int arr[], int n){
-    for (int i=0;i<n;i++){
-        cout << arr[i];
-        if (i < n-1) cout << " ";
-    }
-}
+// void print_array(int arr[], int n){
+//     for (int i=0;i<n;i++){
+//         cout << arr[i];
+//         if (i < n-1) cout << " ";
+//     }
+// }
 // int search(int arr[], int n, int value){
 //     for (int i=0;i<n;i++){
 //         if (arr[i] == value) return i;
