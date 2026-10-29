@@ -30,7 +30,7 @@ int main(){
 
     int e[100] = {23,10,30,0,15,0};
     int nE = 6;
-    cout << compute_array(e, nE, '+') << endl;
+    cout << compute_array(e, nE, '*') << endl;
     cout << compute_mean(e, nE) << endl;
     cout << compute_median(e, nE) << endl;
     cout << get_max_min(e, nE, false) << endl;
